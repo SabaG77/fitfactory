@@ -1,6 +1,6 @@
 export const AboutUs = () => {
   return (
-    <div>
+    <div id="about-us">
       <h1>About-Us</h1>
     </div>
   );

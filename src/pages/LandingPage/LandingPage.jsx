@@ -4,10 +4,10 @@ export const LandingPage = () => {
   return (
     <div>
       <Home />
-      <AboutUs />
+      {/* <AboutUs />
       <Pilates />
       <Trainers />
-      <Pricing />
+      <Pricing /> */}
     </div>
   );
 };
