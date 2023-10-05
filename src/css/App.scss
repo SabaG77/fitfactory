@@ -1,7 +1,7 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 $primary: #bbdc00;
-$secondary: #bbdc00;
+$secondary: #d6fb00;
 $dark: #191919;
 $secondary-dark: #161616;
 $light: #e3e3e3;
@@ -48,7 +48,7 @@ a {
 .header {
   width: 100%;
   background-color: $dark;
-  border-bottom: 1px solid #ffffff0a;
+  border-bottom: 2px solid #ffffff0a;
   overflow: hidden;
   position: fixed;
   z-index: 1000;
@@ -515,8 +515,7 @@ a {
     linear-gradient(to bottom, $primary, $primary, $dark, $dark) border-box;
   border: 4px solid transparent;
   border-radius: $borderSquare;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  box-shadow: #defa3e0c 0px 60px 40px -7px;
 }
 .info-top {
   background-color: $secondary-dark;
@@ -566,7 +565,7 @@ a {
 .info-line {
   height: 5rem;
   width: 8px;
-  background: #bbdc00;
+  background: $primary;
   border-radius: 2px;
 }
 .info-span {
@@ -678,3 +677,119 @@ a {
   }
 }
 // end about
+// start pilates
+.pilates {
+  background: $light;
+  max-width: 100%;
+  padding: 5rem;
+  margin-top: 10rem;
+}
+.pilates-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  align-items: center;
+  max-width: 93%;
+  margin: 0 auto;
+}
+.pilates-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: $dark;
+}
+.pilates-span {
+  font-style: italic;
+  font-weight: 800;
+}
+.pilates-text {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  line-height: 1.4;
+  margin-bottom: 4.2rem;
+  color: #484747;
+}
+.pilates-link {
+  background: $primary;
+  padding: 1rem 2.5rem;
+  border-radius: 16px;
+  color: $dark;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.1s ease-in;
+}
+.pilates-link:hover {
+  background-color: $dark;
+  color: $primary;
+}
+.pilates-left {
+  grid-column: 1/4;
+}
+.pilates-right {
+  grid-column: 5/9;
+}
+@media (max-width: 1412px) {
+  .pilates-title {
+    font-size: 3.5rem;
+  }
+  .pilates-text {
+    margin-bottom: 3.5rem;
+    font-size: 1.3rem;
+  }
+  .pilates-link {
+    font-size: 1.2rem;
+    padding: 0.7rem 2rem;
+  }
+}
+@media (max-width: 1337.33px) {
+  .pilates-left {
+    grid-column: 1/3;
+  }
+  .pilates-right {
+    grid-column: 4/9;
+  }
+}
+@media (max-width: 1160px) {
+  .pilates-top {
+    max-width: 100%;
+  }
+  .pilates-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1077px) {
+  .pilates-right {
+    grid-column: 3/8;
+  }
+  .pilates-top {
+    grid-gap: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .pilates-top {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 4rem;
+  }
+  .pilates-right {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .pilates {
+    padding: 3rem;
+  }
+  .pilates-title {
+    margin-top: 5rem;
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 568px) {
+  .pilates {
+    padding: 3rem;
+  }
+  .pilates-link {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.8rem;
+  }
+}
+// end pilates
