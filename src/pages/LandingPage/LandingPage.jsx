@@ -4,8 +4,8 @@ export const LandingPage = () => {
   return (
     <div>
       <Home />
-      {/* <AboutUs />
-      <Pilates />
+      <AboutUs />
+      {/* <Pilates />
       <Trainers />
       <Pricing /> */}
     </div>
