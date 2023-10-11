@@ -16,8 +16,8 @@ $borderSquare: 16px;
   box-sizing: border-box;
 }
 ::selection {
-  background-color: $primary;
-  color: $dark;
+  background-color: #0054dc;
+  color: $light;
 }
 html {
   scroll-behavior: smooth;
@@ -681,7 +681,7 @@ a {
 .pilates {
   background: $light;
   max-width: 100%;
-  padding: 5rem;
+  padding: 8rem 5rem;
   margin-top: 10rem;
 }
 .pilates-top {
@@ -793,3 +793,286 @@ a {
   }
 }
 // end pilates
+
+// start slider
+
+/* Carousel container */
+.carousel-container {
+  margin-top: 4rem !important;
+}
+/* Carousel item */
+.carousel {
+  max-width: 55%;
+  margin: 0 auto;
+}
+.carousel-item {
+  display: none;
+  text-align: center;
+  background: linear-gradient($dark, $dark) padding-box,
+    linear-gradient(to bottom, $primary, $primary, $primary, $dark, $dark)
+      border-box;
+  border: 6px solid transparent;
+  border-radius: $borderSquare;
+  padding: 7rem 6rem;
+}
+
+/* Active carousel item */
+.carousel-item.active {
+  display: block;
+}
+.trainers-main-title {
+  text-align: center;
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 7rem;
+}
+/* Navigation buttons */
+.carousel-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.carousel-flex .trainer-icon {
+  width: 7rem;
+}
+.slider-text {
+  color: $light;
+  font-size: 1.8rem;
+  margin: 2rem 0;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.vectorLeft {
+  margin-left: 6rem;
+  padding: 1rem;
+  background: #e3e3e309;
+  border-radius: 16px;
+}
+.vectorRight {
+  background: #e3e3e309;
+  margin-right: 6rem;
+  padding: 1rem;
+  border-radius: 16px;
+}
+.vector {
+  cursor: pointer;
+  width: 4rem;
+}
+.carousel-info {
+  margin-top: 3rem;
+}
+.carousel-info-title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: $primary;
+}
+.carousel-info-text {
+  color: $light;
+  font-size: 1.2rem;
+  margin-top: 0.7rem;
+}
+.trainer-box-2 {
+  transition: all 1s ease-in-out;
+  transition-delay: 2s;
+  background: linear-gradient(#191919, #191919) padding-box,
+    linear-gradient(to bottom, #00dcdc, #00dcdc, #00dcdc, #191919, #191919)
+      border-box;
+}
+.carousel-2-title {
+  color: #00dcdc;
+}
+.trainer-box-3 {
+  transition: all 1s ease-in-out;
+  transition-delay: 2s;
+  background: linear-gradient(#191919, #191919) padding-box,
+    linear-gradient(to bottom, #9868e6, #9868e6, #9868e6, #191919, #191919)
+      border-box;
+}
+.carousel-3-title {
+  color: #9868e6;
+}
+
+.trainer-box-4 {
+  background: linear-gradient(#191919, #191919) padding-box,
+    linear-gradient(to bottom, #e91a1a, #e91a1a, #e91a1a, #191919, #191919)
+      border-box;
+}
+.carousel-4-title {
+  color: #e91a1a;
+}
+
+.trainer-box-5 {
+  background: linear-gradient(#191919, #191919) padding-box,
+    linear-gradient(to bottom, #fff566, #fff566, #fff566, #191919, #191919)
+      border-box;
+}
+.carousel-5-title {
+  color: #fff566;
+}
+#trainers {
+  padding-bottom: 10rem;
+}
+.main-trainer0 {
+  background: linear-gradient(180deg, #bbdc00, transparent);
+}
+.main-trainer1 {
+  background: linear-gradient(180deg, #00dcdc, transparent);
+}
+.main-trainer2 {
+  background: linear-gradient(180deg, #9868e6, transparent);
+}
+.main-trainer3 {
+  background: linear-gradient(180deg, #e91a1a, transparent);
+}
+.main-trainer4 {
+  background: linear-gradient(180deg, #fff566, transparent);
+}
+@media (max-width: 1614px) {
+  .carousel-flex {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1322px) {
+  .vectorRight {
+    margin-right: 0;
+  }
+  .vectorLeft {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1104px) {
+  .vectorRight .vectorRight {
+    margin-right: 2rem;
+  }
+  .carousel {
+    max-width: 86%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 796px) {
+  .trainers-main-title {
+    font-size: 3rem;
+  }
+  .slider-text {
+    font-size: 1.5rem;
+  }
+  .carousel-info-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .carousel-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel-item {
+    padding: 7rem 3rem;
+  }
+  .vectorLeft {
+    margin-bottom: 2rem;
+  }
+  .vectorRight {
+    margin-top: 2rem;
+  }
+}
+// end slider
+// start pricing section
+.main-pricing {
+  max-width: 93%;
+  margin: 0 auto;
+}
+.pricing-top {
+  display: grid;
+  margin-top: 8rem;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+}
+.pricing-box {
+  background: linear-gradient(#191919, #191919) padding-box,
+    linear-gradient(to bottom, #bbdc00, #bbdc00, #191919, #191919) border-box;
+  border: 3px solid transparent;
+  border-radius: $borderSquare;
+  padding: 4rem;
+}
+.center-date-price {
+  text-align: center;
+}
+.price-index-3 {
+  background: linear-gradient(#191919, #191919) padding-box,
+    linear-gradient(to bottom, #ffd601, #ffd601, #191919, #191919) border-box;
+  border: 4px solid transparent;
+}
+.date-of-pricingBox {
+  font-size: 2.2rem;
+  color: $light;
+  border-bottom: 1px solid #eeeeee20;
+  padding-bottom: 2rem;
+  font-weight: 700;
+}
+.price-ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.price-text {
+  color: $light;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.price-title {
+  font-size: 5rem;
+  color: $light;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-style: italic;
+  margin: 3rem 0;
+}
+.price-sign {
+  color: $primary;
+  margin-left: -0.7rem;
+  font-size: 2.6rem;
+}
+.price-sign-diff {
+  color: #ffd601;
+}
+.price-btn {
+  background: $primary;
+  display: block;
+  margin-top: 4rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 16px;
+  color: $dark;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.last-price-btn {
+  background-color: #ffd601;
+}
+@media (max-width: 1652px) {
+  .pricing-box {
+    padding: 4rem 2rem;
+  }
+  .price-text {
+    font-size: 1.4rem;
+  }
+  .price-svg {
+    width: 1.5rem;
+  }
+}
+@media (max-width: 1300px) {
+  .pricing-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
+}
+// end pricing section

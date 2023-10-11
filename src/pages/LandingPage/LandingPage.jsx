@@ -6,8 +6,8 @@ export const LandingPage = () => {
       <Home />
       <AboutUs />
       <Pilates />
-      {/* <Trainers />
-      <Pricing /> */}
+      <Trainers />
+      <Pricing />
     </div>
   );
 };
