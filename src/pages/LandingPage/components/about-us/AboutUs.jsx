@@ -36,7 +36,6 @@ export const AboutUs = () => {
         <h2 className="about-title-text">ABOUT US</h2>
         <div className="about-line"></div>
       </div>
-
       <div className="info">
         <div className="info-top">
           <h3 className="info-title">

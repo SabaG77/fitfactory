@@ -1,3 +1,7 @@
+import "leaflet/dist/leaflet.css";
+import { MapContainer, TileLayer } from "react-leaflet";
+import { GymMarker } from "./components";
+
 export const Footer = () => {
   return (
     <footer className="footer" id="main-footer">
@@ -10,33 +14,40 @@ export const Footer = () => {
           />
           <p className="footer-p-social">FOLLOW US ON INSTAGRAM</p>
         </div>
-        <div className="social-images">
-          <div className="sc-img-box">
+        <MapContainer center={[42.26950571307085, 42.67143730347168]} zoom={15}>
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <GymMarker />
+        </MapContainer>
+        <div className="social-icon">
+          <div className="sc-icon-box">
             <img
-              className="social-child-img"
+              className="social-child-icon"
               src={require("../../images/insta-1.png")}
-              alt="insta-photo"
+              alt="insta-icon"
             />
           </div>
-          <div className="sc-img-box">
+          <div className="sc-icon-box">
             <img
-              className="social-child-img"
+              className="social-child-icon"
               src={require("../../images/insta-2.png")}
-              alt="insta-photo"
+              alt="insta-icon"
             />
           </div>
-          <div className="sc-img-box">
+          <div className="sc-icon-box">
             <img
-              className="social-child-img"
+              className="social-child-icon"
               src={require("../../images/insta-3.png")}
-              alt="insta-photo"
+              alt="insta-icon"
             />
           </div>
-          <div className="sc-img-box">
+          <div className="sc-icon-box">
             <img
-              className="social-child-img"
+              className="social-child-icon"
               src={require("../../images/insta-4.png")}
-              alt="insta-photo"
+              alt="insta-icon"
             />
           </div>
         </div>
@@ -54,19 +65,19 @@ export const Footer = () => {
           <h4 className="footer-logo">FITFACTORY</h4>
           <div className="footer-middle-flex">
             <img
-              className="footer-img"
+              className="footer-icon"
               src={require("../../images/insta-footer.png")}
               alt="insta-svg"
               title="instagram"
             />
             <img
-              className="footer-img footer-img-middle"
+              className="footer-icon footer-icon-middle"
               src={require("../../images/insta-footer-2.png")}
               alt="fb-svg"
               title="facebook"
             />
             <img
-              className="footer-img"
+              className="footer-icon"
               src={require("../../images/insta-footer-3.png")}
               alt="tik-tok-svg"
               title="tik-tok"

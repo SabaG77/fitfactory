@@ -2,7 +2,7 @@ import { AboutUs, Home, Pilates, Pricing, Trainers } from "./components";
 
 export const LandingPage = () => {
   return (
-    <div>
+    <div id="landing-page">
       <Home />
       <AboutUs />
       <Pilates />

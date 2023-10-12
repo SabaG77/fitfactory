@@ -60,7 +60,7 @@ export const NavBar = () => {
               <a
                 className="nav-link"
                 href={link.href}
-                onClick={() => setIsActive()}
+                onClick={() => toggleMenu()}
               >
                 {link.name}
               </a>
@@ -68,8 +68,7 @@ export const NavBar = () => {
               <Link
                 className={link.className}
                 to={link.to}
-                href={link.href}
-                onClick={() => setIsActive()}
+                onClick={() => toggleMenu()}
               >
                 {link.name}
               </Link>

@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import { ScrollArrow } from "../../../../globalComponents";
+
 export const Home = () => {
   return (
-    <section className="container">
+    <section className="container" id="home">
       <div className="container-top">
         <div className="container-left">
           <div className="container-flex">
@@ -31,6 +33,7 @@ export const Home = () => {
           />
         </div>
       </div>
+      <ScrollArrow />
     </section>
   );
 };
